@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rick & Morty</title>
+</head>
+<body>
+
+    <div class="principal">
+        <h1>API RICK & MORTY</h1>
+        <form>
+            <label>Character</label><br>
+            <input type="text" class="txt" name="name" id="name"><br>
+            
+            <label>Status</label><br>
+            <select name="Status" id="status" class="opc">
+                <option></option> 
+                <option>Alive</option>
+                <option>Dead</option>
+                <option>Unknown</option>
+              </select>
+          
+            <br>
+            <label>Género</label><br>
+            <select name="genero" id="gender" class="opc">
+                <option></option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Genderless</option>
+                <option>Unknown</option>
+              </select>
+            <div class="btna">
+              <br>
+                <button type="button" class="btn" onclick="cargarTabla()">MOSTRAR</button>
+                <input type="submit" class="btn" value="BORRAR">
+            </div>
+
+            
+        </form>
+        
+
+    </div>
+    <div class="img"><img src="css/Rymfondo.jpg"></div>
+
+
+    <div class="cuadro_tabla">
+    <table class="table"> 
+        <thead>
+          <tr>
+            <th>Personaje</th>
+            <th>Estado</th>
+            <th>Genero</th>
+            <th>Foto</th>
+          </tr>
+        </thead>
+        <tbody id="bodyData">
+          
+        </tbody>
+      </table>
+
+ 
+    <script src="main.js"></script>
+    
+    </div>
+
+</body>
+</html>
